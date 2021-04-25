@@ -21,7 +21,7 @@ Being or not an authority for a given type of claim depends on each verifier: a 
 A claim is trusted by a verifier if either:
 
 - The verifier considers the issuer of the containing credential to be an authority for that claim (_delegated trust_).
-- Or the verifier decides to trust the claim directly, based on their own rules (_diret trust_).
+- Or the verifier decides to trust the claim directly, based on their own rules (_direct trust_).
 
 ### Delegation: depths of authority
 
