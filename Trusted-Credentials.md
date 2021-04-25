@@ -45,14 +45,14 @@ Some entities, such as governments, have the authority to issue claims themselve
 
 The following schema is used in a Verifiable Credential issued by "entity A" to say that "entity B" is authoritative for a given claim type. See [schema.org issue #2854](https://github.com/schemaorg/schemaorg/issues/2854) for the latest discussion about the vocabulary.
 
-```json
+```js
   "issuer": "did:xxx:entityA",
   "credentialSubject": {
-    "id": "did:xxx:entityB"
+    "id": "did:xxx:entityB",
     "hasIssuingAuthority": {
       "@type": "IssuerScope",
-      "issuerFor": "http://schema.org/driverLicense", # The type of claim the entity is authoritative for
-      "delegationDepth": 2 # Number of delegation hops, defaults to 0
+      "issuerFor": "http://schema.org/driverLicense", // The type of claim the entity is authoritative for
+      "delegationDepth": 2 // Number of delegation hops, defaults to 0
     }
   }
 ```
